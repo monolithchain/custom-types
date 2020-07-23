@@ -1,0 +1,27 @@
+{
+  "name": "monolith-custom-types",
+  "version": "0.1.5",
+  "description": "The custom types for Monolith",
+  "main": "dist/index",
+  "typings": "dist/index",
+  "scripts": {
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && tsc -p .",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf dist"
+  },
+  "author": "Monolith Foundation",
+  "license": "GNU",
+  "keywords": [
+    "Monolith Custom-Types"
+  ],
+  "files": [
+    "dist/*"
+  ],
+  "dependencies": {
+    "@polkadot/api": "1.15.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}
